@@ -87,5 +87,32 @@ namespace NotePad
 
            
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox1.Checked)
+            {
+                this.BackColor = Color.Black;
+                this.ForeColor = Color.White;
+                richTextBox1.BackColor = this.BackColor;
+                richTextBox1.ForeColor = this.ForeColor;
+                btnClear.BackColor = this.BackColor;
+                btnClear.ForeColor = this.ForeColor;
+                menuStrip1.BackColor = this.BackColor;
+                menuStrip1.ForeColor = this.ForeColor;
+            }
+            else if(!checkBox1.Checked)
+            {
+                this.BackColor = Color.White;
+                this.ForeColor = Color.Black;
+                richTextBox1.BackColor = this.BackColor;
+                richTextBox1.ForeColor = this.ForeColor;
+                btnClear.BackColor = this.BackColor;
+                btnClear.ForeColor = this.ForeColor;
+                menuStrip1.BackColor = this.BackColor;
+                menuStrip1.ForeColor = this.ForeColor;
+            }
+            
+        }
     }
 }
